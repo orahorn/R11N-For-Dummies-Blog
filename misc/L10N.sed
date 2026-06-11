@@ -10,6 +10,7 @@ s/putchar(/putwchar(/
 s/printf("/wprintf("/
 s/%s/%ls/g
 s/fgets(/fgetws(/
+s/scanf(/wscanf(/
 s/"\(.*\)"/L"\1"/
 s/'\(.*\)'/L'\1'/
 
