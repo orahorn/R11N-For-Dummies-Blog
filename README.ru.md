@@ -34,11 +34,13 @@
   вместо [sed](https://ru.wikipedia.org/wiki/Sed)?
 
 
-
 Сборка производилась с использованием компиляторов
-[gcc]() и [tcc]() в Debian-подобной операционной системе (ОС). Задействовались
-стандартные возможности
-библиотеки [GNU LibC](). Для сборки программ применялось средство
-GNU make с инициализацией переменных `$CC`, `$CFLAGS`, `$LDLIBS` и т.д.
+[gcc](https://ru.wikipedia.org/wiki/GNU_Compiler_Collection)
+и [tcc](https://ru.wikipedia.org/wiki/Tiny_C_Compiler) в
+Debian-подобной операционной системе (ОС). Задействовались стандартные
+возможности библиотеки
+[GNU LibC](https://ru.wikipedia.org/wiki/Glibc). Для сборки программ
+применялось средство GNU make с инициализацией переменных `$CC`,
+`$CFLAGS`, `$LDLIBS` и т.д.
 
 
