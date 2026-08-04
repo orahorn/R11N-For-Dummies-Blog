@@ -15,11 +15,13 @@ Suffix continuity is also maintained, with several examples
 in a single post ending in `-a.c`, `-b.c`, etc.
 Similarly, where possible, the following are added:
 
-* `-r.c` - examples with Russian letters (more common).
+* `-r.c` - examples with Russian letters (more common). Translate even C comments.
 * `-s.c` - -//- in some other Slavic language (less common).
 
 The `misc/` directory contains the following files:
 
+* `getexcs.sh` - download the C exercises by URL and add one inside the
+  comment for backlink.
 * `clean.sh` - cleaning up example code compiled on Linux
 * `L11N.sed` - a template for processing English source examples
 from functions and writing in 
