@@ -23,6 +23,6 @@ s/%c/%lc/g
 s/fgets(/fgetws(/
 s/scanf(/wscanf(/
 s/strtol(/wcstol(/
-s/"\(.*\)"/L"\1"/g
-s/'\(.*\)'/L'\1'/g
+s/"\([^"]*\)"/L"\1"/g
+s/'\([^']*\)'/L'\1'/g
 
