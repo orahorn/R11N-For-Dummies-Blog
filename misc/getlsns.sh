@@ -7,7 +7,14 @@ exit 1
 }
 URL="https://c-for-dummies.com/blog/?p=$P"
 OUT=$P.c
-curl -s "$URL"|sed -n '/^#include/,/^\}/p'| \
-	sed 's/&lt;/</;s/&gt;/>/;s/<\/pre>//;s/\r$//'|tee -a $OUT
+curl -s "$URL"|sed -n '/<pre class="screen">/,/<\/pre>/p'| \
+	sed 's/<pre class="screen">//;s/&lt;/</;s/&gt;/>/;s/<\/pre>//;s/\r$//'|tee -a $OUT
+cat <<EOT |tee -a $OUT
+
+/*
+	$URL
+*/
+EOT
 echo Result in: $OUT
+
 

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 find . -type f -executable -name '[0-9]*' -exec file {} \;
-find . -type f -executable -name '[0-9]*' -exec rm -iv {} +
+find . -type f -executable -not -name '*.*' -and -name '[0-9]*' -exec rm -iv {} +
