@@ -1,5 +1,6 @@
 # R11N-For-Dummies-Blog
 # Russification for Dummies blog
+# RuCeefication for Dummies blog
 
 This is a repost of the famous blog
 [C for Dummies](https://c-for-dummies.com/blog/) by
@@ -9,7 +10,7 @@ It is based on his recent work in the
 as well as manually corrected and someone translated C source files
 from the blog between 2013 and 2019 years.
 
-Examples are arranged by year in the directories `2013/` ... `2026/`.
+Examples are arranged by year in the directories `2013/` ... `2026/`...
 Filenames are truncated to the month and day of publication.
 Suffix continuity is also maintained, with several examples
 in a single post ending in `-a.c`, `-b.c`, etc.
@@ -22,18 +23,23 @@ The `misc/` directory contains the following files:
 
 * `getexcs.sh` - download the C exercises by URL and add one inside the
   comment for backlink.
+* `getlsns.sh` - download the lesson page from
+  [blog](https://c-for-dummies.com/blog/?p=) by number:
+  `https://c-for-dummies.com/blog/?p=<number>`
 * `clean.sh` - cleaning up example code compiled on Linux
 * `L11N.sed` - a template for processing English source examples
-from functions and writing in 
-[ASCII](https://en.wikipedia.org/wiki/ASCII) format to 
-[wide character](https://en.wikipedia.org/wiki/Wide_character)
-`wchar_t`.
-Run: `sed -f L11N.sed source_file_in.c > result_for_localization.c`.
-Note: produced file required manually to fix. After the editing of
-the C sources try to compare with the original by using
-the [diff](https://en.wikipedia.org/wiki/Diff) command.
-May be a better solution to use the
-[patch](https://en.wikipedia.org/wiki/Patch_(Unix)) instead of sed?
+  from functions and writing in 
+  [ASCII](https://en.wikipedia.org/wiki/ASCII) format to 
+  [wide character](https://en.wikipedia.org/wiki/Wide_character)
+  `wchar_t`.
+  Run: `sed -f L11N.sed source_file_in.c > result_for_localization.c`.
+  Note: produced file required manually to fix. After the editing of
+  the C sources try to compare with the original by using
+  the [diff](https://en.wikipedia.org/wiki/Diff) command.
+  May be a better solution to use the
+  [patch](https://en.wikipedia.org/wiki/Patch_(Unix)) instead of sed?
+  Additionaly check some `int` type variables used for character 
+  storage: to use whide character change type to the `wchar_t`.
 
 Compilation and performance were performed using the
 [gcc](https://en.wikipedia.org/wiki/GNU_Compiler_Collection)
