@@ -6,22 +6,22 @@ int main()
 {
 	int ch;
 	
-	/* set locale for wide characters */
+	/* установим локализацию для широких символов */
 	setlocale(LC_ALL,"");
 
-	/* output the lower ASCII codes */
+	/* выведем нижние ASCII-коды */
 	for( ch=0x00; ch<=' '; ch++ )
 	{
-		wprintf(L"%2d %02X %lc is",ch,ch,ch+9216);
+		wprintf(L"%2d %02X %lc - это",ch,ch,ch+9216);
 		if( iswspace(ch) )
 		{
-			wprintf(L" space");
+			wprintf(L" пустой символ");
 			if( iswblank(ch) )
-				wprintf(L" and blank");
+				wprintf(L" и пробел");
 		}
 		else
 		{
-			wprintf(L" non-space/blank");
+			wprintf(L" не пусто/пробел");
 		}
 		putwchar(L'\n');
 	}

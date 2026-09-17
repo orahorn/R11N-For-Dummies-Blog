@@ -32,3 +32,9 @@ int main()
 
 	return 0;
 }
+
+/*
+	https://c-for-dummies.com/blog/?p=7621
+	That Series That Lacks a Name but Equals 5e – Solution
+	Posted on June 8, 2026
+*/
