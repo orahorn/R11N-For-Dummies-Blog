@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="988" height="520">
+
+<rect x="0" y="0" width="988" height="520" fill="#FFFFFF"></rect>
+
+<rect x="0" y="0" width="988" height="40" fill="#FF0000"></rect>
+
+<rect x="0" y="0" width="494" height="280" fill="#0000C0"></rect>
+
+<!--
+Centre is 248,140. Points of star are calculated by 
+adding or subtracting various values to/from these coordinates
+-->
+<path d="M248,124.6 L257,152.6 L233.4,135.4 L262.6,135.4 L239,152.6" fill="#FFFFFF" stroke="#FFFFFF" />
+
+</svg>
+
